@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Mayor Food</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="mfood.css"> <style> </style>
+<script type="text/javascript"src="mfood.js"></script>
+
+<script language="php" src="Geocoding.php"></script>
+
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key={API KEY}&ver=3.exp" src="https://maps.googleapis.com/maps/api/directions/json?origin=27.6325&destination=85.1453=end&sensor=false"></script>
+<body>
+    <h1 class="up">Need help placing an order?, Contact us at +2347089426215</h1>
+    <div class= "nav">
+        <a id="logo"><span>M</span>Food</a>
+        <a href="help.html" target="_self">Help</a>
+        <a target="_self"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up/Log In</button> </a>
+       </div>
+  
+      
+      
+       <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="/action_page.php">
+          <div class="container">
+            <h1 class="sign">Sign Up</h1>
+            <p class="d">Please fill in your details to create an account. </p>
+            <p class="c">Already have an account? </p>
+            <hr>
+            <label for="email"><b class="jo">Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+      
+            <label for="psw"><b class="jo">Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+      
+            <label for="psw-repeat"><b class="jo">Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            
+            <label>
+             <p class="wow"> <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px" > Remember my login details</p>
+            </label>
+      
+            <p class="wow">By creating an account you agree to our <a href="terms.html" style="color:rgb(254, 254, 255)">Tems and Conditions</a>.</p>
+      
+            <div class="clearfix">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+              <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+          </div>
+        </form>
+      </div>
+        <br/>
+ <br/>
+ <br/>
+ <br/><br/> <h1 class="body">  Place your order and get your meal<br/> 
+    at your doorstep in a jiffy!</h1>
+    <br/>
+    <h1 class="body2"> Delivering to:</h1> <div id="location"></div>
+      
+    <div id="location"></div>
+    <script>
+      var div  = document.getElementById("location");
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition, showError);
+        } else {
+          div.innerHTML = "The Browser Does not Support Geolocation";
+        }
+      }
+
+      function showPosition(position) {
+        div.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
+      }
+
+      function showError(error) {
+        if(error.PERMISSION_DENIED){
+            div.innerHTML = "Turn on your internet connection or check location settings."
+        }
+      }
+      getLocation();
+    </script>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+    </body>
+    </html>

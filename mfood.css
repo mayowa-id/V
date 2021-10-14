@@ -1,0 +1,341 @@
+#nav{
+    overflow: hidden;
+    border-radius: 10px;
+    position: fixed;
+    width: 100%;
+    float: right;
+  
+    }
+    .nav a{
+    float: right;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 20px;
+    color: #334d4d;
+    background-color: white;
+    text-align: left;
+    text-decoration: none;
+    padding: 10px;
+    
+    }
+    #logo{
+font-size: 50px;
+margin-top: -20px;
+color: #334d4d;
+float: left;
+text-align: left;
+
+    }
+    
+    span{
+    color: black;
+    font-size:60px;
+    font-family: 'Brush Script MT', cursive;
+    }
+    
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 2;
+      top: 0;
+      left: 0;
+      background-color: #334d4d;;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #f5efef;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+    
+    .container {
+      display: inline-block;
+      cursor: pointer;
+      float: left;
+    }
+    
+    .bar1, .bar2, .bar3 {
+      width: 20px;
+      height: 3px;
+      background-color: #334d4d;
+      margin: 3px 0;
+      transition: 0.4s;
+      border-radius: 5px;
+      margin-left: 3px;
+    }
+    
+    .change .bar1 {
+      -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+      -webkit-transform: rotate(45deg) translate(-8px, -8px);
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+    
+    #nav{
+    margin-top: 10px;
+    }
+    u.home{
+      text-decoration-color: lightcoral;
+      text-decoration-line: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: 3px;
+    }
+    
+    
+    
+    
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 2px solid rgb(156, 139, 153);
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+      border-radius: 15px;
+    }
+    
+    form.example button {
+      float: left;
+      width: 50px;
+      padding: 5px;
+      background: #fdfdfd;
+      color: white;
+      font-size: 17px;
+      border: 1px solid rgba(53, 54, 70, 0.301);
+      border-left: none;
+      cursor: pointer;
+      border-radius: 15px;
+    }
+    
+    form.example button:hover {
+      background: #4d5749;
+    }
+    
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    u.login{
+    background-color:#334d4d; 
+    border-radius: 20px;
+    text-decoration: none;
+    color: floralwhite;
+    padding: 10px;
+    }
+    h1.up{
+        background-color: rgba(124, 104, 235, 0.932);
+        text-align: center;
+        position: relative;
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 15px;
+        color: floralwhite;
+    }
+    body{
+        margin: 0px;
+      
+    }
+    header.top{
+        margin-top: 5px;
+    }
+    h1.body{
+        font-size: 30px;
+        color: black;
+        text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 30px;
+    }
+    h1.body2{
+        font-size: 20px;
+        color: #334d4d;
+        text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 30px;
+    }
+    #location{
+        font-size: 20px;
+        color: #a81c1c;
+        text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 30px;
+    
+    }
+    input[type=text], input[type=password] {
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #fcfcfc;
+      border-radius: 20px;
+    }
+    
+    /* Add a background color when the inputs get focus */
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+    
+    /* Set a style for all buttons */
+    button {
+      
+      border: none;
+      cursor: pointer;
+      opacity: 0.9;
+      font-size: 18px;
+      margin-top: -20px;
+      background-color:#334d4d; 
+    border-radius: 20px;
+    text-decoration: none;
+    color: floralwhite;
+    padding: 10px;
+    }
+    
+    button:hover {
+      opacity:2;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      
+      background-color: #9c2219;
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float: left;
+      width: 25%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top: 15px;
+     justify-content: center;
+    }
+    
+    /* Add padding to container elements */
+    .container {
+      padding: 16px;
+    }
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position:fixed; /* Stay in place */
+      z-index:auto; 
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; /* Enable scroll if needed */
+      background-color: #bc85c7;
+      padding-top: 50px;
+      border-radius: 25px;
+      background-position: center;
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+      
+      width: 80%; /* Could be more or less, depending on screen size */
+      border-radius: 10px;
+      margin-top: -30px;
+    }
+    
+    /* Style the horizontal ruler */
+    hr {
+      border: 1px solid #f1f1f1;
+      margin-bottom: 10px;
+      
+    }
+     
+    /* The Close Button (x) */
+    .close {
+      position: absolute;
+      right: 35px;
+      top: 15px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #f1f1f1;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #f44336;
+      cursor: pointer;
+    }
+    
+    /* Clear floats */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    /* Change styles for cancel button and signup button on extra small screens */
+    @media screen and (max-width: 300px) {
+      .cancelbtn, .signupbtn {
+         width: 100%;
+      }
+    }
+    h1.sign{
+      color: #fdf6d4;
+      font-family:Georgia, 'Times New Roman', Times, serif;
+      font-size: 60px;
+      margin-top: -20px;
+    }
+    p.d{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 30px;
+      font-size: 20px;
+      margin-top: -20px;
+    }
+    .jo{
+      font-size: 25px;
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding-bottom: 15px;
+    }
+    .wow{
+      font-family:Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 18px;
+    }
+   #jos{
+     text-align: right;
+     float: right;
+   }
+   p.c{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    
+    float: right;
+   }
